@@ -16,11 +16,3 @@ def test_price_known_item():
 
 def test_price_unknown_item():
     assert client.get("/price/unicorn").status_code == 404
-
-
-requirements.txt
-flask==3.0.3
-
-requirements-dev.txt
--r requirements.txt
-pytest==8.3.3
